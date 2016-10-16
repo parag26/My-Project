@@ -44,7 +44,4 @@ switch ($result) {
     default: 
         index();
 } 
-<Message>
-Hello <?php echo $number ?>
-</Message>
 </Response>
