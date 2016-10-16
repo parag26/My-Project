@@ -4,7 +4,6 @@ $body = $_POST['BODY'];
 header('Content-Type: text/xml');
 ?>
 
-<Response>
 function index(){
    $response = new Services_Twilio_Twiml();
    $response->sms("Reply with the proper UID number");
@@ -43,5 +42,4 @@ switch ($result) {
         break; 
     default: 
         index();
-} 
-</Response>
+}
