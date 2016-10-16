@@ -1,25 +1,27 @@
 <?php
-$number = $_POST['From'];
-$body = $_POST['BODY'];
-header('Content-Type: text/xml');
-?>
+
+include('inc/Services/Twilio.php');
 
 function index(){
    $response = new Services_Twilio_Twiml();
    $response->sms("Reply with the proper UID number");
    echo $response;
+}
 function U01233007(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
+}
 function U01274412(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
-function U9080602(){ 
+}
+function U9080602(){
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
+}
 
 $body = $_REQUEST['Body'];  
 
@@ -36,9 +38,6 @@ switch ($result) {
         break; 
     case 'U9080602': 
         U9080602(); 
-        break; 
-    case 'owl': 
-        owl(); 
         break; 
     default: 
         index();
