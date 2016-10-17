@@ -7,17 +7,17 @@ function index(){
    $response->sms("Reply with the proper UID number");
    echo $response;
 }
-function U01233007(){ 
+function manish(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
 }
-function U01274412(){ 
+function pratik(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
 }
-function U9080602(){
+function parag(){
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
@@ -30,14 +30,14 @@ $result = trim($result);
 $result = strtolower($result); 
 
 switch ($result) { 
-    case 'U01233007': 
-        U01233007(); 
+    case 'manish': 
+        manish(); 
         break; 
-    case 'U01274412': 
-        U01274412(); 
+    case 'pratik': 
+        pratik(); 
         break; 
-    case 'U9080602': 
-        U9080602(); 
+    case 'parag': 
+        parag(); 
         break; 
     default: 
         index();
