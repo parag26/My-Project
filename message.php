@@ -4,7 +4,7 @@ include('inc/Services/Twilio.php');
 
 function index(){
    $response = new Services_Twilio_Twiml();
-   $response->sms("Reply with the proper name & number");
+   $response->sms("Reply with the proper UID number");
    echo $response;
 }
 function manish01(){ 
