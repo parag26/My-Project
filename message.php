@@ -41,5 +41,4 @@ switch ($result) {
         break; 
     default: 
         index();
-        break;
 }
