@@ -4,20 +4,20 @@ include('inc/Services/Twilio.php');
 
 function index(){
    $response = new Services_Twilio_Twiml();
-   $response->sms("Reply with the proper UID number");
+   $response->sms("Reply with the proper name & number");
    echo $response;
 }
-function manish(){ 
+function manish01(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
 }
-function pratik(){ 
+function pratik02(){ 
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
 }
-function parag(){
+function parag03(){
     $response = new Services_Twilio_Twiml();
     $response->sms("Maths = A, English = A, Science = A"); 
     echo $response;
@@ -30,14 +30,14 @@ $result = trim($result);
 $result = strtolower($result); 
 
 switch ($result) { 
-    case 'manish': 
-        manish(); 
+    case 'manish01': 
+        manish01(); 
         break; 
-    case 'pratik': 
-        pratik(); 
+    case 'pratik02': 
+        pratik02(); 
         break; 
-    case 'parag': 
-        parag(); 
+    case 'parag03': 
+        parag03(); 
         break; 
     default: 
         index();
