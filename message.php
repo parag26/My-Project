@@ -9,17 +9,17 @@ function index(){
 }
 function manish01(){ 
     $response = new Services_Twilio_Twiml();
-    $response->sms("Maths = A, English = A, Science = A"); 
+    $response->sms("Hello the result is: \nMaths = A, English = A, Science = A"); 
     echo $response;
 }
 function pratik02(){ 
     $response = new Services_Twilio_Twiml();
-    $response->sms("Maths = A, English = A, Science = A"); 
+    $response->sms("Hello the result is: \nMaths = A, English = A, Science = A"); 
     echo $response;
 }
 function parag03(){
     $response = new Services_Twilio_Twiml();
-    $response->sms("Maths = A, English = A, Science = A"); 
+    $response->sms("Hello the result is: \nMaths = A, English = A, Science = A"); 
     echo $response;
 }
 
